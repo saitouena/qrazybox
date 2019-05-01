@@ -1302,6 +1302,14 @@ function updateBlock(value, cls){
 
 }
 
+function dump_qr_array() {
+    let sz = qr_array.length;
+    for(let i=0;i<sz;i++) {
+	let line = qr_array[i].map(x => x===1 ? 'X' : '_').join('');
+	console.log(line);
+    }
+}
+
 
 /*******************************************************************
 *
